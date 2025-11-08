@@ -1,0 +1,399 @@
+📋 Complete Placeholder Guide & Integration Instructions
+🎯 All Placeholders in the Code
+Here's a comprehensive list of ALL placeholders you need to replace:
+
+📁 1. IMAGE PLACEHOLDERS
+A. Logo & Favicon
+Location: Throughout the website
+
+HTML
+
+Line ~11: <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+Line ~2000: <img src="Images/Logo.png" alt="AMIT Logo" class="logo-img">
+Line ~3800: <img src="Images/Logo.png" alt="AMIT Logo" class="footer-logo">
+How to Replace:
+
+Create a folder named Images in your project root
+Save your college logo as Logo.png (PNG format, 200x200px recommended)
+Save your favicon as favicon.ico (ICO format, 32x32px or 64x64px)
+Folder Structure:
+
+text
+
+your-website/
+├── index.html
+├── Images/
+│   ├── Logo.png          ← Your college logo
+│   └── favicon.ico       ← Your favicon icon
+└── Recruitement_image/
+    ├── 01.jpg
+    ├── 02.jpg
+    └── ...
+B. Recruiter/Company Logos
+Location: Recruiters Section (~Line 3500-3600)
+
+HTML
+
+<img src="Recruitement_image/01.jpg" alt="Recruiter">
+<img src="Recruitement_image/02.jpg" alt="Recruiter">
+<img src="Recruitement_image/03.jpg" alt="Recruiter">
+<img src="Recruitement_image/04.jpg" alt="Recruiter">
+<img src="Recruitement_image/05.jpg" alt="Recruiter">
+<img src="Recruitement_image/06.jpg" alt="Recruiter">
+<img src="Recruitement_image/07.jpg" alt="Recruiter">
+<img src="Recruitement_image/08.jpg" alt="Recruiter">
+How to Replace:
+
+Create folder Recruitement_image in root
+Save company logos as: 01.jpg, 02.jpg, 03.jpg... (JPG format, 300x150px recommended)
+Use transparent backgrounds if possible
+C. Faculty Images
+Location: Faculty Section (~Line 2400-2600)
+
+HTML
+
+<!-- HODs - Line ~2420-2470 -->
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=HOD+CSE" alt="Prof. A. K. Sharma">
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=HOD+ME" alt="Dr. Sunita Verma">
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=HOD+Civil" alt="Mr. Rajesh Prasad">
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=HOD+EE" alt="Dr. Priya Singh">
+
+<!-- Professors - Line ~2480-2530 -->
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=Faculty" alt="Dr. Rina Deshpande">
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=Faculty" alt="Prof. Manish Pandey">
+<!-- ... more faculty placeholders -->
+How to Replace:
+
+Collect faculty photos (300x350px or similar aspect ratio)
+Save as: faculty-01.jpg, faculty-02.jpg, etc.
+Create Images/Faculty/ folder
+Replace ALL https://placehold.co/300x350/EFEFEF/333333?text=... with Images/Faculty/faculty-01.jpg
+Example Replacement:
+
+HTML
+
+<!-- OLD -->
+<img src="https://placehold.co/300x350/EFEFEF/333333?text=HOD+CSE" alt="Prof. A. K. Sharma">
+
+<!-- NEW -->
+<img src="Images/Faculty/prof-ak-sharma.jpg" alt="Prof. A. K. Sharma">
+D. Leadership Images
+Location: Leadership Section (~Line 2050-2150)
+
+HTML
+
+<!-- Chairman - Line ~2090 -->
+<img src="https://placehold.co/500x350/EFEFEF/333333?text=Chairman's+Portrait" alt="Chairman">
+
+<!-- Principal - Line ~2120 -->
+<img src="https://placehold.co/500x350/EFEFEF/333333?text=Principal's+Portrait" alt="Principal">
+How to Replace:
+
+Get Chairman & Principal photos (500x350px)
+Save as chairman.jpg and principal.jpg
+Replace placeholders:
+HTML
+
+<!-- Chairman -->
+<img src="Images/Leadership/chairman.jpg" alt="Chairman">
+
+<!-- Principal -->
+<img src="Images/Leadership/principal.jpg" alt="Principal">
+E. Testimonial Avatar Images
+Location: Testimonials Section (~Line 2700-2800)
+
+HTML
+
+<!-- Line ~2730 -->
+<img src="https://placehold.co/60x60/0056b3/ffffff?text=RK" alt="Rahul Kumar">
+
+<!-- Line ~2760 -->
+<img src="https://placehold.co/60x60/ff6f00/ffffff?text=PS" alt="Priya Sharma">
+
+<!-- Line ~2790 -->
+<img src="https://placehold.co/60x60/0056b3/ffffff?text=AS" alt="Amit Singh">
+How to Replace:
+
+HTML
+
+<!-- Use actual student photos or keep initials -->
+<img src="Images/Testimonials/student1.jpg" alt="Rahul Kumar">
+<img src="Images/Testimonials/student2.jpg" alt="Priya Sharma">
+<img src="Images/Testimonials/student3.jpg" alt="Amit Singh">
+F. Gallery Placeholder Images
+Location: Gallery Section (~Line 3200-3400)
+
+HTML
+
+<!-- Line ~3250 -->
+<img src="https://placehold.co/400x280/2c3e50/ffffff?text=Computer+Lab" alt="Computer Lab">
+
+<!-- Line ~3270 -->
+<img src="https://placehold.co/400x280/2c3e50/ffffff?text=Mechanical+Lab" alt="Mechanical Workshop">
+
+<!-- Line ~3280 -->
+<img src="https://placehold.co/400x280/ff6f00/ffffff?text=Convocation" alt="Convocation">
+
+<!-- Line ~3290 -->
+<img src="https://placehold.co/400x280/0056b3/ffffff?text=Library+Interior" alt="Library">
+
+<!-- And more... -->
+How to Replace:
+
+Take real campus photos (400x280px or 1920x1080px for better quality)
+Save in Images/Gallery/ folder
+Replace all placeholder URLs:
+HTML
+
+<!-- OLD -->
+<img src="https://placehold.co/400x280/2c3e50/ffffff?text=Computer+Lab" alt="Computer Lab">
+
+<!-- NEW -->
+<img src="Images/Gallery/computer-lab.jpg" alt="Computer Lab">
+🔗 2. LINK PLACEHOLDERS
+A. Video Tour
+Location: Video Section (~Line 2010)
+
+HTML
+
+<!-- Line ~2017 - REPLACE THIS -->
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+How to Replace:
+
+Upload your campus tour video to YouTube
+Get the embed code or video ID
+Replace URL:
+HTML
+
+<!-- If your video ID is: ABC123XYZ -->
+<iframe src="https://www.youtube.com/embed/ABC123XYZ" allowfullscreen></iframe>
+How to get YouTube Embed Code:
+
+Go to your video on YouTube
+Click "Share" → "Embed"
+Copy the src URL from the code
+B. Download Links
+Location: Downloads Section (~Line 3000-3100)
+
+All download buttons currently link to Google Form. Replace with actual file links:
+
+HTML
+
+<!-- OLD (Line ~3045) -->
+<a href="https://docs.google.com/forms/d/e/1FAIp..." class="download-btn" target="_blank">Download</a>
+
+<!-- NEW -->
+<a href="downloads/prospectus.pdf" class="download-btn" download>Download</a>
+Create Downloads:
+
+Create downloads/ folder
+Add PDFs: prospectus.pdf, fee-structure.pdf, admission-form.pdf, etc.
+Update ALL 6 download links (~Line 3035-3095)
+📝 3. CONTENT PLACEHOLDERS
+A. Countdown Timer Date
+Location: Line ~4180
+
+JavaScript
+
+// Line ~4180 - CHANGE THIS DATE
+const deadline = new Date('2024-07-31T23:59:59').getTime();
+How to Change:
+
+JavaScript
+
+// Set your actual admission deadline
+const deadline = new Date('2024-12-31T23:59:59').getTime(); // Dec 31, 2024
+B. Faculty Names & Designations
+Location: Faculty Section (~Line 2400-2650)
+
+Replace with actual faculty details:
+
+HTML
+
+<!-- Line ~2430 - Example -->
+<!-- OLD -->
+<h3>Prof. A. K. Sharma</h3>
+<p>HOD, Computer Science</p>
+
+<!-- NEW - Use your actual faculty names -->
+<h3>Dr. Rajesh Kumar</h3>
+<p>HOD, Computer Science & Engineering</p>
+Do this for ALL 15 faculty members (4 HODs + 11 other faculty)
+
+C. Testimonials Content
+Location: Line ~2710-2810
+
+Replace with real student testimonials:
+
+HTML
+
+<!-- OLD -->
+<p class="testimonial-text">"AMIT has been instrumental in shaping my career..."</p>
+<h4>Rahul Kumar</h4>
+<p>B.Tech CSE, 2022</p>
+
+<!-- NEW -->
+<p class="testimonial-text">"Your actual student testimonial here..."</p>
+<h4>Actual Student Name</h4>
+<p>B.Tech ME, 2023</p>
+D. Event Dates & Details
+Location: Events Section (~Line 2900-3000)
+
+HTML
+
+<!-- Line ~2930 - Change dates and event names -->
+<span class="event-day">15</span>
+<span class="event-month">Jun</span>
+<h4>Annual Tech Fest 2024</h4>
+<p>Join us for the biggest technical festival...</p>
+Replace with your actual upcoming events
+
+🛠️ COMPLETE INTEGRATION CHECKLIST
+Step 1: Create Folder Structure
+text
+
+your-website/
+│
+├── index.html
+│
+├── Images/
+│   ├── Logo.png                    ✅ Your logo
+│   ├── favicon.ico                 ✅ Your favicon
+│   │
+│   ├── Faculty/
+│   │   ├── prof-sharma.jpg         ✅ Faculty photos
+│   │   ├── dr-verma.jpg
+│   │   └── ...
+│   │
+│   ├── Leadership/
+│   │   ├── chairman.jpg            ✅ Chairman photo
+│   │   └── principal.jpg           ✅ Principal photo
+│   │
+│   ├── Testimonials/
+│   │   ├── student1.jpg            ✅ Student photos
+│   │   └── student2.jpg
+│   │
+│   └── Gallery/
+│       ├── computer-lab.jpg        ✅ Campus photos
+│       ├── library.jpg
+│       └── ...
+│
+├── Recruitement_image/
+│   ├── 01.jpg                      ✅ Company logos
+│   ├── 02.jpg
+│   └── ... (up to 08.jpg)
+│
+└── downloads/
+    ├── prospectus.pdf              ✅ Downloadable files
+    ├── fee-structure.pdf
+    ├── admission-form.pdf
+    └── ...
+Step 2: Find & Replace Guide
+Use your code editor's Find & Replace (Ctrl+H) for bulk changes:
+
+Replace All Faculty Placeholders:
+Find:
+
+text
+
+https://placehold.co/300x350/EFEFEF/333333?text=Faculty
+Replace with:
+
+text
+
+Images/Faculty/default.jpg
+Then manually update each one with specific names.
+
+Replace All Gallery Placeholders:
+Find:
+
+text
+
+https://placehold.co/400x280/
+Replace with:
+
+text
+
+Images/Gallery/
+Then add proper image names like lab-1.jpg, event-1.jpg, etc.
+
+Replace Download Links:
+Find:
+
+text
+
+https://docs.google.com/forms/d/e/1FAIpQLSfGhESctIjxzMj3troXZVroqqSWRlHBUD3l1ioV4CKCMLa4Ig/viewform
+Replace with (for downloads section only):
+
+text
+
+downloads/file.pdf
+Step 3: Content Updates
+Search for these and update:
+
+Search: Prof. A. K. Sharma → Replace with actual HOD name
+Search: Dr. Sunita Verma → Replace with actual name
+Search: Rahul Kumar → Replace with real testimonial author
+Search: 2024-07-31 → Replace with actual deadline date
+Search: Annual Tech Fest 2024 → Replace with real event name
+📍 LINE-BY-LINE PLACEHOLDER REFERENCE
+Line Range	Element	Placeholder	Action
+11	Favicon	Images/favicon.ico	Add your favicon
+1450	Logo	Images/Logo.png	Add your logo
+2010	Video	youtube.com/embed/dQw4w9WgXcQ	Replace with your video ID
+2090	Chairman Photo	placehold.co/500x350/...Chairman	Add real photo
+2120	Principal Photo	placehold.co/500x350/...Principal	Add real photo
+2430-2650	Faculty Photos	placehold.co/300x350/...Faculty	Add 15 faculty photos
+2730-2790	Testimonial Avatars	placehold.co/60x60/...	Add student photos
+2930-3000	Event Dates	15 Jun, 22 Jun, etc.	Update with real dates
+3035-3095	Download Links	Google Form URL	Link to actual PDFs
+3250-3400	Gallery Images	placehold.co/400x280/...	Add 12 real photos
+3500-3600	Recruiter Logos	Recruitement_image/01-08.jpg	Add company logos
+3800	Footer Logo	Images/Logo.png	Same as header logo
+4180	Countdown Date	2024-07-31T23:59:59	Set admission deadline
+🚀 QUICK START INTEGRATION (5 Minutes)
+Minimal Setup to Get Started:
+Create folder: Images/
+Add: Logo.png (any logo for now)
+Add: favicon.ico (can generate from logo using online tools)
+Create folder: Recruitement_image/
+Add 8 dummy images named 01.jpg to 08.jpg (can use same image 8 times temporarily)
+Website will now load without errors!
+
+Then gradually replace placeholders with real content.
+
+🔍 How to Find Placeholders Yourself
+Use your editor's search (Ctrl+F) to find:
+
+placehold.co - All placeholder images
+https://www.youtube.com/embed/dQw - Video placeholder
+Prof. or Dr. - Faculty names to update
+2024- - Dates to update
+Lorem or dummy - Placeholder text (none in this code)
+✅ VALIDATION CHECKLIST
+Before going live, verify:
+
+ Logo appears in header and footer
+ Favicon shows in browser tab
+ All faculty photos load (no broken images)
+ Chairman & Principal photos visible
+ All 8 recruiter logos display
+ Gallery has no placeholder text images
+ Video plays correctly
+ Download links work
+ Event dates are current
+ Countdown shows correct deadline
+ Testimonials have real content
+ All social media links work
+ Google Form links are correct
+ Map shows correct location
+🎨 Image Size Recommendations
+Element	Recommended Size	Format
+Logo	200x80px or 300x120px	PNG (transparent)
+Favicon	32x32px or 64x64px	ICO or PNG
+Faculty Photos	300x350px	JPG
+Chairman/Principal	500x350px	JPG
+Testimonial Avatars	100x100px	JPG (square)
+Gallery Images	1200x800px	JPG (compressed)
+Recruiter Logos	300x150px	PNG (transparent)
+Hero Carousel	1920x600px	JPG
